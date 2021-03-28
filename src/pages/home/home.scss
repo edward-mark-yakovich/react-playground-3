@@ -1,0 +1,12 @@
+@import '~@css_global/shared.scss';
+
+.home {
+  position: relative;
+  width: 100%;
+}
+
+.home_heading {
+  > * {
+    margin-bottom: 10px;
+  }
+}

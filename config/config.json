@@ -1,0 +1,6 @@
+{
+  "apiHost": "http://chinonthetank.com/wp-json/wp/v2/",
+  "uiHost": "http://localhost:8080",
+  "subDir": "/test/react-test-03",
+  "optimized": false
+}

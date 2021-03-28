@@ -1,0 +1,102 @@
+@import '~@css_global/shared.scss';
+
+.login,
+.login > .grid {
+  height: 100%;
+}
+
+.login {
+  position: relative;
+
+  @media only screen and (min-width: 600px) {
+    min-height: 500px;
+  }
+
+  > .grid {
+    align-items: center;
+  }
+}
+
+.login-form {
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+
+  input[disabled],
+  button[disabled] {
+    opacity: 0.15;
+    cursor: default;
+  }
+}
+
+.login-form__errors {
+  width: 100%;
+  text-align: center;
+  background-color: $errorLight;
+  margin-top: 30px;
+  border-radius: 12px;
+  padding: 5px;
+
+  p {
+    color: $errorDark;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.login-form_heading {
+  position: relative;
+  text-align: center;
+  margin-bottom: 40px;
+  padding-bottom: 40px;
+
+  p {
+    margin-top: 7px;
+  }
+
+  &:after {
+    position: absolute;
+    content: '';
+    width: 100px;
+    height: 10px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: $grey1;
+    border-radius: 5px;
+  }
+}
+
+.login-form_heading-reset {
+  margin: 20px 0;
+}
+
+.login-form__input {
+  margin-bottom: 20px;
+
+  input {
+    width: 100%;
+    min-height: 50px;
+    background-color: $grey1;
+    border: 1px solid $grey3;
+    border-radius: 5px;
+    transition: opacity 0.75s ease-in-out 0s;
+  }
+
+  label,
+  input {
+    margin: 0;
+    padding: 10px;
+  }
+}
+
+.login-form__submit {
+  margin: 20px 0;
+}
+
+.login-form__reset {
+  span {
+    display: inline-block;
+    margin-right: 5px;
+  }
+}

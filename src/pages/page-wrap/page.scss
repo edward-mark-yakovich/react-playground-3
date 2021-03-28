@@ -1,0 +1,88 @@
+@import '~@css_global/shared.scss';
+
+.page,
+.page__inner,
+.page__inner > .grid {
+  height: 100%;
+}
+
+.page {
+  position: relative;
+  width: 100%;
+}
+
+.page__inner {
+  > .grid {
+    @media only screen and (max-width: 599px) {
+      display: block;
+    }
+
+    @media only screen and (min-width: 600px) {
+      flex-direction: row;
+      align-items: stretch;
+      min-width: 350px;
+      flex-basis: 350px;
+    }
+  }
+}
+
+.page__sidebar {
+  position: relative;
+  overflow: hidden;
+  text-align: left;
+  background-color: $primary;
+  background-image: $gradientVertical;
+  color: white;
+  padding: 30px;
+
+  @media only screen and (min-width: 600px) {
+    min-width: 250px;
+    flex-basis: 250px;
+  }
+
+  @media only screen and (min-width: 800px) {
+    min-width: 350px;
+    flex-basis: 350px;
+  }
+
+  @media only screen and (min-width: 1000px) {
+    padding: 40px;
+  }
+
+  > .grid {
+    height: 100%;
+    align-items: center;
+  }
+
+  &:before,
+  &:after {
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    content: '';
+    border: 20px solid $transparentLight;
+    background: transparent;
+  }
+
+  &:before {
+    top: -20px;
+    right: -20px;
+    width: 80px;
+    height: 80px;
+  }
+
+  &:after {
+    bottom: -40px;
+    left: -40px;
+    border: 40px solid $transparentLight;
+  }
+}
+
+.page__content {
+  overflow: auto;
+  padding: 30px;
+
+  @media only screen and (min-width: 1000px) {
+    padding: 40px;
+  }
+}

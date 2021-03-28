@@ -1,0 +1,52 @@
+@import '~@css_global/shared.scss';
+
+.error-boundary,
+.error-boundary > .grid {
+  height: 100%;
+}
+
+.error-boundary {
+  position: relative;
+
+  > .grid {
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.error-boundary__wrap {
+  max-width: 500px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.error-boundary__inner {
+  position: relative;
+  text-align: center;
+  border-radius: 30px;
+  background: transparent;
+  background-clip: padding-box;
+  border: solid 30px transparent;
+  padding: 30px;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    z-index: -1;
+    border-radius: inherit;
+    background: $gradientVertical;
+  }
+}
+
+.error-boundary__content {
+  background-color: $white;
+  border-radius: 20px;
+  padding: 20px;
+
+  > img {
+    width: 100%;
+    height: auto;
+    margin: 20px auto;
+  }
+}

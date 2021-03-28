@@ -1,0 +1,40 @@
+@import '~@css_global/shared.scss';
+
+.alert {
+  display: none;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  border-radius: 5px;
+  background-color: $white;
+  box-shadow: $mediumBoxShadow;
+  opacity: 0;
+	visibility: hidden;
+  z-index: 100;
+  transition: opacity 0.75s ease-in-out 0s,
+							visibility 0.75s ease-in-out 0s;
+
+  > .grid {
+    align-items: center;
+  }
+}
+
+.alert--active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.alert__icon {
+  width: 40px;
+  height: 40px;
+  font-size: 24px;
+  border-radius: 5px 0 0 5px;
+  background-color: #F857A6;
+  background-image: linear-gradient(#F857A6, #FF5858);
+  padding: 13px 0 0 8px;
+}
+
+.alert__copy {
+  width: auto;
+  margin: 0 10px;
+}

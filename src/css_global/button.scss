@@ -1,0 +1,31 @@
+@import '~@css_global/shared.scss';
+
+.button {
+  position: relative;
+  display: inline-block;
+  color: $primary;
+  transition: opacity 0.75s ease-in-out 0s;
+
+  &:hover,
+  &:focus {
+    color: $secondary;
+    text-decoration: underline;
+  }
+
+  &.button--primary {
+    width: 100%;
+    min-height: 50px;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    background-image: $gradientHorizontalRight;
+    border-radius: 5px;
+    padding: 10px 20px;
+
+    &:hover,
+    &:focus {
+      background-image: $gradientHorizontalLeft;
+      text-decoration: none;
+    }
+  }
+}

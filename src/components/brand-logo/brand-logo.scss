@@ -1,0 +1,37 @@
+@import '~@css_global/shared.scss';
+
+.brand-logo {
+  position: relative;
+  display: inline-block;
+
+  > .grid {
+    align-items: center;
+  }
+}
+
+.brand-logo__icon {
+  position: relative;
+  width: 100%;
+  flex-basis: 25px;
+  min-width: 25px;
+  min-height: 25px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.brand-logo--light {
+  color: white;
+
+  .brand-logo__icon {
+    background-color: $white;
+  }
+}
+
+.brand-logo--dark {
+  color: $primary;
+
+  .brand-logo__icon {
+    background-color: $primary;
+    background-image: $gradientVertical;
+  }
+}

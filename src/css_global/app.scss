@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;800&display=swap');
+@import '~@css_global/shared.scss';
+@import '~@css_global/reset.css';
+@import '~@css_global/typography.scss';
+@import '~@css_global/grid.scss';
+@import '~@css_global/button.scss';
+
+/////// --------
+// GLOBAL - App setup
+/////// --------
+
+html, body,
+[id="app"],
+.app {
+  height: 100%;
+}
+
+body {
+  .loader {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+  }
+}
+
+._request-active {
+  .loader {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+/////// --------
+// GLOBAL - visibly hidden
+/////// --------
+
+.vh { // not actionable
+  position: absolute !important;
+  display: flex;
+  visibility: visible;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  margin: 1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+
+  &-a { // actionable
+    position: absolute !important;
+    display: block;
+    top: -1px;
+    width: 0;
+    height: 0;
+    cursor: default;
+    overflow: hidden;
+    opacity: 0;
+    margin: 0;
+    padding: 0;
+  }
+}

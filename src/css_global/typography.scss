@@ -1,0 +1,92 @@
+@import '~@css_global/shared.scss';
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: $black;
+}
+
+button {
+  background: none;
+  outline: none;
+  border: 0;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 12px;
+  line-height: 1.3em;
+  color: $black;
+}
+
+h1, h2, h3 {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.3em;
+  font-weight: 800;
+}
+
+p, li, a, button {
+  font-size: 12px;
+  line-height: 1.4em;
+  font-weight: 500;
+}
+
+ul, li {
+  margin-bottom: 10px;
+}
+
+.heading-1 {
+  font-size: 28px;
+  font-weight: 800;
+
+  @media only screen and (min-width: 600px) {
+    font-size: 32px;
+  }
+}
+
+.heading-2 {
+  font-size: 22px;
+  font-weight: 800;
+
+  @media only screen and (min-width: 600px) {
+    font-size: 28px;
+  }
+}
+
+.para-1 {
+  font-size: 18px;
+
+  &.para-1--bold {
+    font-weight: 800;
+  }
+}
+
+.para-2 {
+  font-size: 14px;
+
+  &.para-2--bold {
+    font-weight: 800;
+  }
+}
+
+.mice-1 {
+  font-size: 9px;
+
+  &.mice-1--bold {
+    font-weight: 800;
+  }
+}
+
+.mice-2 {
+  font-size: 8px;
+
+  &.mice-2--bold {
+    font-weight: 800;
+  }
+}

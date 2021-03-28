@@ -1,0 +1,11 @@
+@import '~@css_global/shared.scss';
+
+.company-message__copy {
+  > * {
+    margin: 0 0 10px 0;
+  }
+}
+
+.company-message__logo {
+  margin-bottom: 40px;
+}

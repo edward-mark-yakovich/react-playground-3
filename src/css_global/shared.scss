@@ -1,0 +1,24 @@
+$primary: #F857A6;
+$secondary: #FF5858;
+
+$gradientVertical: linear-gradient($primary, $secondary);
+$gradientHorizontalRight: linear-gradient(to right, $primary, $secondary);
+$gradientHorizontalLeft: linear-gradient(to left, $primary, $secondary);
+
+$black: #282725;
+$white: #fff;
+
+$grey1: #f2f4f5;
+$grey2: #eef1f3;
+$grey3: #c7cdd2;
+$grey4: #9ba4aa;
+$grey5: #646a70;
+$grey6: #2a2c2d;
+
+$transparentLight: rgba(255,255,255,0.3);
+$transparentDark: rgba(0,0,0,0.3);
+
+$errorDark: #d92100;
+$errorLight: #ffd7cc;
+
+$mediumBoxShadow: 0 0 8px rgba(0,0,0,0.3);
